@@ -1,0 +1,211 @@
+/* App.css */
+
+/* Color Palette:
+   - Primary Color: #14a5fb
+   - Light Background: #a4d4fc
+   - Dark Accent: #1c3e7f
+   - Secondary Accent: #619aa9
+   - Muted Color: #746cb4
+*/
+
+html {
+    background-color: #a4d4fc;
+    font-family: sans-serif, monospace;
+}
+
+.headerDiv {
+    background: #a4d4fc; /* Light background for the header section */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center-align text */
+}
+
+#quote {
+    font-family: sans-serif, monospace;
+    font-size: 15px;
+}
+
+.headerDiv h1 {
+    font-size: 4.5rem; /* Size of the main heading */
+    color: #1c3e7f; /* Dark accent color for the heading */
+    margin: 20px 0; /* Margin above and below the heading */
+}
+
+.appDiv {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between left and right divs */
+    padding: 20px; /* Padding around the app content */
+}
+
+.leftDiv {
+    flex: 1; /* Allow left div to take up available space */
+    margin-right: 20px; /* Space between left and right divs */
+    background: #ffffff; /* White background for left div */
+    border: 1px solid #14a5fb; /* Primary color border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the left div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.rightDiv {
+    flex: 1; /* Allow right div to take up available space */
+    background: #ffffff; /* White background for right div */
+    border: 1px solid #14a5fb; /* Primary color border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the right div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+button {
+    background: #619aa9; /* Secondary accent color for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
+    margin-right: 5px;
+}
+
+button:hover {
+    background: #14a5fb; /* Change to primary color on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.appDiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+.goalCreatorDiv form{
+    color: black;
+}
+
+.goalCreatorDiv form input {
+    color: black;
+}
+
+/* Card.css */
+
+.cardDiv {
+    background: #ffffff; /* White background for the card */
+    border: 1px solid #a4d4fc; /* Light background for subtle separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin: 10px 0; /* Margin to separate cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.2s; /* Smooth transform effect on hover */
+}
+.cardDiv:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+.cardDiv p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 18px; /* Font size for text */
+    color: #1c3e7f; /* Dark accent color for text */
+}
+form {
+    margin-top: 10px; /* Space above the form */
+}
+.addProg{
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 22px; /* Font size for text */
+    color: #1c3e7f; /* Dark accent color for text */
+}
+.cardDiv input[type='number'] {
+    width: 80%; /* Set width to 80% of the parent container */
+    max-width: 300px; /* Set a maximum width to prevent it from getting too wide */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #14a5fb; /* Primary color border for the input */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the input */
+    font-size: 16px; /* Font size for input */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+button.update {
+    background: #619aa9; /* Secondary accent color for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
+    margin-left: 10px; /* Move the button slightly to the right */
+}
+
+button.update:hover {
+    background: #14a5fb; /* Change to primary color on hover */
+}
+/* GoalCreator css */
+
+
+#goalCreatorDiv {
+    background-color: #a4d4fc; /* Light background color */
+    padding: 20px; /* Padding around the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form with margin */
+}
+#goalCreatorDiv:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+}
+input[type='text'],
+input[type='number'] {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #14a5fb; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+    font-size: 16px; /* Font size for input */
+}
+button.goal {
+    background: #619aa9; /* Secondary accent color for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
+    margin-left: 10px; /* Move the button slightly to the right */
+}
+
+button.goal:hover {
+    background: #14a5fb; /* Change background color on hover */
+}
+/* css Graph */
+.graphDiv {
+    background-color: #a4d4fc; /* Light blue background for the graph section */
+    border-radius: 10px; /* Rounded corners for a smooth look */
+    padding: 20px; /* Padding inside the graph section */
+    margin: 20px auto; /* Margin around the graph, centered horizontally */
+    max-width: 800px; /* Maximum width to prevent the graph from stretching too wide */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text within the div */
+}
+
+.graphDiv h2 {
+    color: #1c3e7f; /* Darker blue color for the heading */
+    font-size: 26px; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+}
+
+.graphDiv canvas {
+    width: 100%; /* Canvas takes full width of the container */
+    max-width: 700px; /* Restricts canvas width for larger screens */
+    height: 400px; /* Fixed height for the graph */
+    border: 2px solid #14a5fb; /* Border around the canvas for emphasis */
+    border-radius: 8px; /* Rounded corners for the canvas */
+    background-color: white; /* White background to contrast the graph */
+}
+#goalListDiv p {
+ color: #1c3e7f; /* Darker blue color for the heading */
+    font-size: 20px; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+}

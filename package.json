@@ -1,0 +1,65 @@
+{
+  "name": "scratch-project",
+  "version": "1.0.0",
+  "description": "Wellness Tracker Scratch Project",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack server --mode development",
+    "build": "webpack --mode production",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goblin-Sharks-PTRI16/Scratch-Project.git"
+  },
+  "keywords": [
+    "React",
+    "Express",
+    "SQL",
+    "Oauth"
+  ],
+  "author": "Goblin Sharks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goblin-Sharks-PTRI16/Scratch-Project/issues"
+  },
+  "homepage": "https://github.com/Goblin-Sharks-PTRI16/Scratch-Project#readme",
+  "dependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@react-oauth/google": "^0.12.1",
+    "babel-loader": "^9.2.1",
+    "body-parser": "^1.20.3",
+    "chart.js": "^4.4.4",
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "css": "^3.0.0",
+    "eslint": "^9.12.0",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "loader": "^2.1.1",
+    "nodemon": "^3.1.7",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.13.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "style": "^0.0.3",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass": "^1.79.5",
+    "sass-loader": "^16.0.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
